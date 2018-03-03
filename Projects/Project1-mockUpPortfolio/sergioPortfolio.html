@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sergio's Portfolio</title>
+    <link rel="stylesheet" href="css/cssbooth/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+  	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <header class="header">
+      <div class="header__inner">
+          <img src="images/main/logo.jpg" class="header__logo" alt="front-end developer tools logo">
+      </div>
+      <div class="header__description">
+          <h1 class="header__title">Sergio Lopez Garcia</h1>
+          <h4 class="header__subtitle">Front-end Beginner</h4>
+      </div>
+  </header>
+  <hr>
+  <main>
+      <section class="content">
+          <section class="main__pic">
+              <img src="images/main/portada.jpeg" class="img-responsive back__image" alt="coding screen">
+          </section>
+          <hr>
+          <section class="work__title">
+                  <h3>Feature Work  <span class="modal__instructions">(Click on the image for quick preview)</span></h3>
+          </section>
+          <section class="work__items">
+              <div class="works top__border">
+                  <img src="images/main/lion__thumbnail.jpg" class="work__thumbnail" alt="This is a lion" data-toggle="modal" data-target="#project1">
+                  <h2>Trading Card</h2>
+                  <p><a href="https://www.google.es/search?dcr=0&source=hp&ei=DTf9WYTDBY6z0gXL2J7ADw&q=html&oq=html&gs_l=psy-ab.3..35i39k1j0i67k1l7j0i131k1j0.1092.1735.0.2251.5.4.0.0.0.0.140.463.1j3.4.0....0...1.1.64.psy-ab..1.4.460.0..0i10k1.0.ST1rk_0pNYI" target="_blank">Projects</a></p>
+              </div>
+              <div class="works">
+                  <img src="images/main/bull__terrier__thumbnail.jpg" class="work__thumbnail" alt="This is a Bull-Terrier" data-toggle="modal" data-target="#project2">
+                  <h2>Calendar</h2>
+                  <p><a href="https://www.google.es/search?dcr=0&source=hp&ei=DTf9WYTDBY6z0gXL2J7ADw&q=html&oq=html&gs_l=psy-ab.3..35i39k1j0i67k1l7j0i131k1j0.1092.1735.0.2251.5.4.0.0.0.0.140.463.1j3.4.0....0...1.1.64.psy-ab..1.4.460.0..0i10k1.0.ST1rk_0pNYI" target="_blank">Projects</a></p>
+              </div>
+              <div class="works bottom__border">
+                  <img src="images/main/brighton__times__thumbnail.jpg" class="work__thumbnail" alt="Brighton Times cover" data-toggle="modal" data-target="#project3">
+                  <h2>Brighton Times</h2>
+                  <p><a href="https://www.google.es/search?dcr=0&source=hp&ei=DTf9WYTDBY6z0gXL2J7ADw&q=html&oq=html&gs_l=psy-ab.3..35i39k1j0i67k1l7j0i131k1j0.1092.1735.0.2251.5.4.0.0.0.0.140.463.1j3.4.0....0...1.1.64.psy-ab..1.4.460.0..0i10k1.0.ST1rk_0pNYI" target="_blank">Projects</a></p>
+              </div>
+          </section>
+      </section>
+  </main>
+  <footer>
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" class="footer__logo center-block" >
+  </footer>
+
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header header__lion">
+                    <h2 class="modal-title" id="myModalLabel">Animal Trading Card</h2>
+                </div>
+                <div class="modal-body">
+                    <img class="modal__thumbnail" src="images/modals/modal__lion.jpg" alt="Lion trading card">
+                    <a href="#"><h4>Full project</h4></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn__lion" data-dismiss="modal">Back to PORTOFOLIO</button>
+                </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                  <div class="modal-header header__calendar">
+                      <h2 class="modal-title" id="myModalLabel2">Bull-Terrier Calendar</h2>
+                  </div>
+                  <div class="modal-body">
+                      <img class="modal__thumbnail" src="images/modals/modal__calendar.jpg" alt="Bull-Terrier calendar">
+                      <a href="#"><h4>Full project</h4></a>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default btn__calendar" data-dismiss="modal">Back to PORTOFOLIO</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                  <div class="modal-header header__brighton">
+                      <h2 class="modal-title" id="myModalLabel3">The Brighton Times</h2>
+                  </div>
+                  <div class="modal-body">
+                      <img class="modal__thumbnail" src="images/modals/modal__brighton.jpg" alt="The Brighton Times preview">
+                      <a href="https://google.es"><h4>Full project</h4></a>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default btn__brighton" data-dismiss="modal">Back to PORTOFOLIO</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+/* add your CSS here */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+  width: 375px;
+  margin-bottom: 30px;
+}
+
+.main {
+  border: 1px #d6d2d6 solid;
+  border-radius: 9px;
+  width: 330px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: 10px 10px 5px 0px #d6d2d6;
+  -moz-box-shadow: 10px 10px 5px 0px #d6d2d6;
+  box-shadow: 10px 10px 5px 0px #d6d2d6;
+}
+
+.black {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 35px;
+  margin: 30px 15px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-radius: 9px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.list {
+  list-style: none;
+  text-align: left;
+}
+
+.description {
+  width: 300px;
+  border: 1px #d6d2d6 solid;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-radius: 9px;
+}
+
+p, .list {
+  padding: 7px;
+  margin: 5px;
+}

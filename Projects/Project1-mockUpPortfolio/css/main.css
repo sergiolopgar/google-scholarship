@@ -1,0 +1,382 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  color: #7c7c7c;
+}
+
+header, footer, section, div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 10px;
+}
+
+/*
+
+******   GENERAL  *******
+
+*/
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__inner {
+  width: 30%;
+}
+
+.header__description {
+  width: 70%;
+  text-align: right;
+}
+
+.header__logo {
+  height: 120px;
+  margin: 1.5em 0 0 2em;
+}
+
+.header__title {
+  margin-top: 1.3em;
+  font-size: 3.5em;
+}
+
+.header__subtitle {
+  font-size: 1.8em;
+}
+
+/*
+
+******   HEADER   *******
+
+*/
+
+hr {
+  border: 2px solid #c4c4c4;
+  margin-top: 0;
+}
+
+.content {
+  width: 100%;
+  margin-bottom: 3.5em;
+}
+
+.main__pic {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.back__image {
+  width: 100%;
+  max-height: 520px;
+  opacity: 0.4;
+}
+
+/*
+
+******   BACKGROUND IMAGE   *******
+
+*/
+
+.work__title {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.work__title h3 {
+  font-size: 2.5em;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.modal__instructions {
+  font-size: 0.7em;
+}
+
+.work__items {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works {
+  width: 33.33%;
+  text-align: center;
+}
+
+.work__thumbnail {
+  width: 98%;
+}
+
+.works h2 {
+  font-size: 2em;
+}
+
+.works a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #7c7c7c;
+}
+
+/*
+
+******   FEATURE WORKS  *******
+
+*/
+
+.footer__logo {
+  height: 25px;
+  margin-bottom: 2em;
+  opacity: 0.9;
+}
+
+/*
+
+******   FOOTER  *******
+
+*/
+
+.modal-dialog {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal__thumbnail {
+	max-height: 450px;
+  min-width: 200px;
+}
+
+.modal-body a {
+  color: #7c7c7c;
+}
+
+.header__lion,
+.btn__lion {
+  background-color: #c86511;
+  color: #fff;
+}
+
+.header__calendar,
+.btn__calendar {
+  background-color: #ff7e6d;
+  color: #fff;
+}
+
+.header__brighton,
+.btn__brighton {
+  background-color: #c6a4cf;
+  color: #fff;
+}
+
+.btn {
+  font-size: 1.5em;
+}
+
+/*
+
+******   MODALS  *******
+
+*/
+
+@media screen and (max-width: 599px) {
+  .header__logo {
+    height: 70px;
+    margin: 0.5em 0 0 0.5em;
+  }
+  .header__title {
+    margin-top: 1em;
+    font-size: 1.9em;
+  }
+  .header__subtitle {
+    font-size: 1.1em;
+  }
+  hr {
+    margin-bottom: 1em;
+  }
+  .content {
+    margin-bottom: 1.5em;
+  }
+  .main__pic {
+    margin-bottom: 1em;
+  }
+  .back__image {
+    min-height: 150px;
+    max-height: 355px;
+  }
+  .work__title {
+    margin-bottom: 1em;
+  }
+  .work__title h3 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em;
+  }
+  .modal__instructions {
+    font-size: 0.55em;
+  }
+  .works {
+    width: 100%;
+    display: inline-table;
+    border-top: 2px solid #c4c4c4;
+    border-bottom: 2px solid #c4c4c4;
+  }
+  .top__border {
+    border-top: 4px solid #c4c4c4;
+  }
+  .bottom__border {
+    border-bottom: 4px solid #c4c4c4;
+  }
+  .work__thumbnail {
+    width: 70%;
+    max-height: 290px;
+    padding-top: 2em;
+  }
+  .works h2 {
+    margin-top: 0.7em;
+    font-size: 1.9em;
+    max-height: 20px;
+  }
+  .modal-dialog {
+    width: 310px;
+    height: 600px;
+    margin-top: 0;
+  }
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 5px;
+  }
+  .modal-title {
+    font-size: 1.7em;
+  }
+  .modal__thumbnail {
+  	max-height: 450px;
+    min-width: 150px;
+    max-width: 290px;
+  }
+  .btn {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .header__logo {
+    height: 90px;
+  }
+  .header__title {
+    font-size: 2.7em;
+    margin-top: 0.7em;
+  }
+  .header__subtitle {
+    font-size: 1.8em;
+  }
+  .work__title h3 {
+    font-size: 1.8em;
+  }
+  .works h2 {
+    font-size: 2.2em;
+  }
+  .works a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width:599px) {
+  .modal__instructions {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 749px) {
+  .works h2 {
+    font-size: 2.3em;
+  }
+  .modal-dialog {
+    width: 510px;
+    height: 800px;
+    margin-top: 0;
+  }
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 10px;
+  }
+  .modal-title {
+    font-size: 2.3em;
+  }
+  .modal__thumbnail {
+  	max-height: 650px;
+    min-width: 150px;
+    max-width: 470px;
+  }
+  .btn {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 749px) and (min-heigth: 950px) {
+  .modal-dialog {
+    width: 710px;
+    height: 900px;
+    margin-top: 0;
+  }
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 15px;
+  }
+  .modal-title {
+    font-size: 2.3em;
+  }
+  .modal__thumbnail {
+  	max-height: 750px;
+    min-width: 150px;
+    max-width: 670px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__title {
+    margin-top: 0.55em;
+    font-size: 4.9em;
+  }
+  .header__subtitle {
+    font-size: 2em;
+  }
+  .work__title h3 {
+    font-size: 3.2em;
+  }
+  .works h2 {
+    font-size: 2.9em;
+  }
+  .works a {
+    font-size: 1.5em;
+  }
+}
+
+/*
+
+******   RESPONSIVENESS  *******
+
+*/

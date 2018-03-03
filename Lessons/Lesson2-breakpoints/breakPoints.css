@@ -1,0 +1,130 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
+
+@media screen and (max-width: 564px) {
+  .header__logo {
+    height: 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .header__title {
+    font-size: 2.2em;
+    vertical-align: top;
+    margin-left: 0;
+  }
+  nav {
+    z-index: 10;
+    width: 200px;
+    background-color: #fff;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-564px, 0);
+    transform: translate(-564px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+ }
+    nav.open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+     }
+    .nav__item {
+       display: list-item;
+       border-bottom: 1px solid #E0E0E0;
+       width: 100%;
+       text-align: left;
+     }
+    .header__menu {
+       display: inline-block;
+       position: absolute;
+       right: 0;
+       padding: 1em;
+     }
+    .header__menu svg {
+       width: 32px;
+       fill: #E0E0E0;
+       margin-top: 1em;
+     }
+}
+
+@media screen and (max-width: 325px) {
+    .header__logo {
+      height: 40px;
+    }
+    .header__title {
+      font-size: 1.8em;
+    }
+    .header__menu svg {
+      width: 25px;
+      margin-top: 0.8em;
+    }
+    footer a {
+      font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer a {
+      padding: 0.8em;
+    }
+}
+
+@media screen and (min-width: 565px) {
+    .header__logo {
+      margin-top: 2.2em;
+    }
+    .header__title {
+      margin-top: 0.8em;
+    }
+    .hero {
+      order: 0;
+      width: 60%;
+    }
+    .top-news {
+      order: 1;
+      width: 40%
+    }
+    .weather {
+      order: 2;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .scores {
+      width: 50%;
+      order: 3;
+    }
+    .scores__table {
+      height: 100%;
+    }
+    .weather {
+      width: 50%;
+      order: 2;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    main, .header__inner, .nav, .content {
+      width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .recent-news {
+      order: 2;
+    }
+    .weather {
+      order: 3;
+    }
+    .scores {
+      order: 4;
+    }
+}

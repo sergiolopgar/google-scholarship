@@ -1,0 +1,236 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
+
+@media screen and (max-width: 563px) {
+  .header__logo {
+    height: 48px;
+    margin-left: 1em;
+  }
+  .header__title {
+    font-size: 2.2em;
+    vertical-align: top;
+    margin-left: 0;
+  }
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+    margin-top: 1em;
+  }
+  .scores__location {
+    display: none;
+  }
+  .weather {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scores {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 355px) {
+    .header__logo {
+      height: 40px;
+    }
+    .header__title {
+      font-size: 1.8em;
+    }
+    .header__menu svg {
+      width: 25px;
+      margin-top: 0.8em;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    footer a {
+      font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 445px) and (max-width: 563px) {
+  .header__title {
+    font-size: 3em;
+  }
+  .header__logo {
+    height: 55px;
+    margin-top: 2em;
+  }
+  .header__menu svg {
+    margin-top: 2.4em;
+  }
+  .top-news__item a {
+    font-size: 1.1em;
+  }
+  .weather__location {
+    font-size: 1.7em;
+  }
+  .snippet__thumbnail {
+    width: 150px;
+  }
+  .right__float {
+    float: right;
+    margin-right: 0;
+    margin-left: 0.8em;
+  }
+  .snippet p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 445px) and (max-width: 850px) {
+  .weather__today img {
+    width: 50%;
+  }
+  .weather__next__image {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 564px) {
+  .header__logo {
+    height: 84px;
+    margin-top: 2em;
+  }
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .top-news {
+    order: 1;
+    width: 40%;
+  }
+  .weather {
+    order: 2;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scores {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scores__table td:nth-child(2) {
+      text-align: center;
+    }
+  .scores__table td {
+      text-align: center;
+    }
+  }
+
+
+@media screen and (min-width: 700px) {
+  .weather {
+    width: 35%;
+    order: 3;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scores {
+    width: 57%;
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scores__table {
+    height: 100%;
+  }
+  .scores__location {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 849px) {
+  .snippet {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .snippet p {
+    font-size: 1.2em;
+  }
+  .snippet h3 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 850px) {
+  main, .header__inner, .nav, .content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .recent-news {
+    order: 2;
+    width: 60%;
+  }
+  .weather {
+    order: 3;
+    width: 40%;
+  }
+  .weather__next__item {
+    width: 50%;
+    margin-bottom: 2.1em;
+  }
+  .weather__next__image {
+    width: 40%;
+  }
+  .last {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .last img {
+    width: 20%;
+  }
+  .scores {
+    order: 4;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+  .scores__location {
+    display: block;
+  }
+}
